@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Mourya | BCA AI Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #101827;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 85px 20px;
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 13px 28px;
+            border: none;
+            border-radius: 6px;
+            background: white;
+            color: #1d4ed8;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .about {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .about h2,
+        .assignments h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        .assignments {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.13);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #1d4ed8;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #101827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+                display: inline-block;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Aman Mourya</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#assignments">Assignments</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Hello, I'm Aman Mourya</h1>
+
+        <p>
+            BCA (Artificial Intelligence) Student<br>
+            Invertis University, Bareilly
+        </p>
+
+        <button onclick="document.getElementById('assignments').scrollIntoView({behavior:'smooth'})">
+            View My Assignments
+        </button>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Name: Aman Mourya<br>
+            Course: Bachelor of Computer Applications (AI)<br>
+            Student ID: BCAI2025155<br>
+            University: Invertis University<br>
+            Skills: HTML, CSS and Programming
+        </p>
+    </section>
+
+    <section class="assignments" id="assignments">
+
+        <h2>My CSS Practical Assignments</h2>
+
+        <p>Explore my practical work and projects.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Assignment 01</h3>
+                <p>CSS Box Model</p>
+                <a href="Q1 .css-box-model.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Assignment 02</h3>
+                <p>Resume Design</p>
+                <a href="Q2.resume.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Assignment 03</h3>
+                <p>Profile Card</p>
+                <a href="Q3.profile-card.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Assignment 04</h3>
+                <p>Landing Section</p>
+                <a href="Q4.landing-section.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Assignment 05</h3>
+                <p>Profile Card Project</p>
+                <a href="Q5.profile-card-project.html">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Assignment 06</h3>
+                <p>Responsive Menu</p>
+                <a href="Q6.responsive-menu.html">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Aman Mourya | BCA Artificial Intelligence</p>
+        <p>Invertis University, Bareilly</p>
+    </footer>
+
+</body>
+</html>
